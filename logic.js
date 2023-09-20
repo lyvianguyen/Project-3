@@ -1,4 +1,6 @@
 let url = "https://data.cdc.gov/api/views/bi63-dtpu/rows.json?accessType=DOWNLOAD";
+
+//url = "http://127.0.0.1:5000/api/v1.0./Alabama/2005/Stroke"
 var fulldata=[];
 states=[];
 causeOfDeath = [];
@@ -6,7 +8,6 @@ causeOfDeathCategory=[];
 year=[];
 deaths =[];
 
-let statesDropdown = document.getElementById("states");
 let yearDropdown = document.getElementById("year");
 let codDropdown = document. getElementById("COD");
 
@@ -21,13 +22,8 @@ d3.json(url).then (function(data){
             year.push(data.data[i][8]);
 
     }
-   uniqueStates = unique(states);
-    for(i =0; i<uniqueStates.length; i++){
-        let option = document.createElement("option");
-        option.textContent = uniqueStates[i];
-        option.value = uniqueStates[i];
-        statesDropdown.appendChild(option);
-    }
+ 
+   
     uniqueYears= unique(year);
     for(i =0; i<uniqueYears.length; i++){
         let option = document.createElement("option");
@@ -46,63 +42,22 @@ d3.json(url).then (function(data){
     
 });
 
-function filterByYear(year){
-    returner =[]
-    d3.json(url).then (function(data){
-       for (i =0; i<data.data.length; i++){
-        if (data.data[i][8]===year){
-            returner.push(data.data[i]);
-            
-        }
-       }
-       
-       
-    });
-    console.log(returner);
-}
-function filterByState(state){
-    returner=[];
-    d3.json(url).then (function(data){
-        for (i =0; i<data.data.length; i++){
-         if (data.data[i][11]===state){
-             returner.push(data.data[i]);
-             
-         }
-        }
-        
-        
-     });
-     console.log(returner);
-
-}
-function filterByCOD(COD){
-    returner =[];
-    //d3.json(url).then (function(data){
-        //fulldata= data.data;
-        for (i =0; i<fulldata.length; i++){
-         if (fulldata[i][10]===COD){
-            alert("yes");
-             //returner.push(fulldata[i]);
-             
-         }
-        }
-        
-        
-     //});
-    console.log(fulldata);
-    console.log(returner);
-
-}
 
 function unique(array){
     let returner = new Set(array);
     return  Array.from(returner);
 }
+function filterByYearAndCOD(){
+    let currentYear = yearDropdown.value;
+    let currentCOD = codDropdown.value;
+    let url = `http://127.0.0.1:5000/api/v1.0./${currentYear}/${currentCOD}`;
+    d3.json(url).then (function(data){
+       alert(url);
+    });
 
-
+}
 
     
-filterByCOD("Cancer");
 
 //console.log(fulldata);
 
