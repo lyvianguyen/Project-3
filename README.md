@@ -1,5 +1,5 @@
 # Project-3: Death Tolls
-Topic: Causes of death in the United States
+Topic: Causes of death in the United States from 1999-2017
 
 ## Team Members
 - Abiodun Oseni
