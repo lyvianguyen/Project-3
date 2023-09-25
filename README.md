@@ -14,7 +14,6 @@ This project uses the following to clean, sort, and depicts the causes of death 
 
 - Python
 - Plotly
-- Chartjs
 - PostgreSQL
 - Pandas
 - Flask
