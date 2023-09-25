@@ -8,16 +8,16 @@ The lowest causes of death were kidney disease at 2.4% and Suicide at 1.9% for t
  
 The top 10 causes of death in the United States in order of percentage:  
  
- 				     Heart disease                         33.7% 
-                                     Cancer                                29.9% 
-                                     Stroke                                 7.5% 
-                                     CLRD                                   7.2% 
-                                     Unintentional injuries                 6.5% 
-                                     Alzheimer’s                            4.1%
-                                     Diabetes                               3.9% 
-                                     Influenza & Pneumonia                  3.0% 
-                                     Kidney disease                         2.4% 
-                                     Suicide                                1.9% 
+ 				  Heart disease                         33.7% 
+                                  Cancer                                29.9% 
+                                  Stroke                                 7.5% 
+                                  CLRD                                   7.2% 
+                                  Unintentional injuries                 6.5% 
+                                  Alzheimer’s                            4.1%
+                                  Diabetes                               3.9% 
+                                  Influenza & Pneumonia                  3.0% 
+                                  Kidney disease                         2.4% 
+                                  Suicide                                1.9% 
                                                                          
 Total deaths gradually decreased from 3.81 million in 1999 to 3.65 million in 2009. They began to increase in 2010 at 3.7 million and continued to increase up to a maximum of 4.2 million in 2017. 
  
@@ -80,3 +80,28 @@ Wyoming and Alaska.  Here are the total number of deaths for every state from th
 				District of Columbia      168907
 				Wyoming                   145154
 				Alaska                    117890
+
+
+The top five causes of death in The United States were in the most populous states and were
+from all causes other than the top ten.
+
+				State		Cause Name	Deaths
+                		----------      ----------      -------
+				California	All causes	4575252
+				Florida		All causes	3334759
+				Texas		All causes	3167333
+				New York	All causes	2896936
+				Pennsylvania	All causes	2449539
+
+
+The bottom five causes of death in The United States were in the least populous states and were
+from kidney disease, influenza, and suicide.
+
+
+				State			Cause Name		Deaths
+				-------         -----------------------	------  ------
+				Wyoming			Kidney disease		 1173
+				Alaska			Influenza and pneumonia	  999
+				Vermont			Kidney disease		  892
+				Alaska			Kidney disease		  783
+				District of Columbia	Suicide			  690
