@@ -23,4 +23,60 @@ Total deaths gradually decreased from 3.81 million in 1999 to 3.65 million in 20
  
 California had the largest number of deaths of any state, followed by New York, Florida, Texas, and Pennsylvania in descending order. 
  
-The states with the lowest number of deaths were: 
+The states with the lowest number of deaths were North Dakota, Vermont, District of Columbia,   
+Wyoming and Alaska.  Here are the total number of deaths for every state from the highest to lowest.              
+
+				State                   Total Deaths 1999-2017
+                                -------------           ----------------------
+				United States           84009152
+				California               8169513
+				Florida                  5868231
+				Texas                    5535028
+				New York                 5161056
+				Pennsylvania             4304492
+				Ohio                     3716207
+				Illinois                 3489953
+				Michigan                 3011369
+				North Carolina           2608123
+				New Jersey               2397044
+				Georgia                  2326265
+				Tennessee                2012251
+				Virginia                 1989346
+				Indiana                  1934641
+				Missouri                 1905549
+				Massachusetts            1812189
+				Washington               1635078
+				Wisconsin                1607291
+				Alabama                  1603535
+				Arizona                  1572443
+				Maryland                 1469677
+				Kentucky                 1423885
+				Louisiana                1409567
+				South Carolina           1364864
+				Minnesota                1288025
+				Oklahoma                 1243157
+				Oregon                   1064013
+				Colorado                 1039435
+				Mississippi               992097
+				Arkansas                  987455
+				Connecticut               981027
+				Iowa                      954486
+				Kansas                    831840
+				West Virginia             721988
+				Nevada                    652604
+				New Mexico                521279
+				Nebraska                  513032
+				Utah                      472567
+				Maine                     433412
+				Idaho                     375595
+				New Hampshire             353884
+				Rhode Island              327640
+				Hawaii                    320652
+				Montana                   294784
+				Delaware                  255015
+				South Dakota              244178
+				North Dakota              202091
+				Vermont                   179348
+				District of Columbia      168907
+				Wyoming                   145154
+				Alaska                    117890
