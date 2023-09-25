@@ -1,5 +1,5 @@
 # Project-3
-# Topic: Causes of death in the United States
+## Topic: Causes of death in the United States
 # Team Members: Lyvia Nguyen, Alan Grubb, Kikelomo Ijagbemi, Dev Paul, Taylor Wilson, Abiodun Oseni
 # This project uses Python flask-powered API and Postgres SQL database to clean and sort the causes of death across the United States.
 # Data source: https://data.cdc.gov/api/views/bi63-dtpu/rows.json?accessType=DOWNLOAD
