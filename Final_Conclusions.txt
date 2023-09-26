@@ -1,0 +1,36 @@
+For the nineteen-year time span beginning with January 1999 to December 2017 we decided to limit the
+Scope of our data analysis to the top ten causes of death in The United States. 
+
+The top 10 causes of death in the United States in order of percentage:  
+ 
+ 				  Heart disease                         33.7% 
+                                  Cancer                                29.9% 
+                                  Stroke                                 7.5% 
+                                  CLRD                                   7.2% 
+                                  Unintentional injuries                 6.5% 
+                                  Alzheimer’s                            4.1%
+                                  Diabetes                               3.9% 
+                                  Influenza & Pneumonia                  3.0% 
+                                  Kidney disease                         2.4% 
+                                  Suicide                                1.9% 
+                                                                         
+Total deaths gradually decreased from 3.81 million in 1999 to 3.65 million in 2009. They began to increase in 2010 at 3.7 million and continued to increase up to a maximum of 4.2 million in 2017. 
+ 
+California had the largest number of deaths of any state, followed by New York, Florida, Texas, and Pennsylvania in descending order.  
+ 
+The states with the lowest number of deaths were North Dakota, Vermont, District of Columbia,   
+Wyoming and Alaska.  
+
+The bottom five causes of death in The United States were in the least populous states and were
+from kidney disease, influenza, and suicide.
+
+It's important to point out that the states with the largest number of deaths were not the states with the largest per capita death rates.  When adjusting for population density, the highest deaths per capita were found in states with large geographies and small populations.
+
+If we were to expand the scope of our analysis we could rank each state by the number of deaths per capita for each of the top ten causes of death.
+
+
+
+
+
+
+                  
