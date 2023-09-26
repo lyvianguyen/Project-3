@@ -13,12 +13,9 @@ The age-adjusted death rate is a statistical measure that accounts for differenc
 
 According to the World Population Review, the state with the highest death rate in the United States is Mississippi with a death rate of 1,138.7 per 100,000 people in 2020.  The states with the second and third highest death rates are Alabama and West Virginia with death rates of 1,057.9 and 1,055.8 per 100,000 people respectively.
 
-The age adjusted-death rate in The United States was 841.6 deaths per 100,000 population in 2021.
 The age adjusted-death rate in The United States was 828.7 deaths per 100,000 population in 2020.
-The age adjusted-death rate in The United States was 715.3 deaths per 100,000 population in 2019.
 
-
-It's important to point out that the states with the largest number of deaths were not the states with the highest death rates per 100,000 in population.  Using the age-adjusted death rates, The 50 US states rank from lowest to highest are:
+It's important to point out that the states with the largest number of deaths were not the states with the highest death rates per 100,000 in population.  Using the age-adjusted death rates, The 50 US states rank from lowest to highest in 2017 are:
 
 	Minnesota	119.1	8,230
 	Colorado	122.7	7,060
@@ -70,6 +67,8 @@ It's important to point out that the states with the largest number of deaths we
 	Arkansas	223.8	8,270
 	Mississippi	231.6	7,944
 	Oklahoma	237.2	10,772
+
+        (Source: National Center for Health Statistics)
 
 
 Other questions we might ask in the future:
