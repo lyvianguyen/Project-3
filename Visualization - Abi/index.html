@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cause of Death in the US</title>
+  <style>html,
+    body,
+    #map {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .legend {
+    line-height: 18px;
+    color: #555;
+    font: 2px;
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+    
+}
+    
+    .leaflet-bottom.leaflet-left {
+      width: 90%;
+    }
+    
+    .leaflet-control-container .leaflet-timeline-controls {
+      width: 100%;
+      box-sizing: border-box;
+      margin: 0;
+      margin-bottom: 15px;
+    }
+    .info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}</style>
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+  integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+  crossorigin=""></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.js" type="text/javascript" ></script>
+
+
+   <!-- Leaflet CSS -->
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+   integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+   crossorigin="" />
+
+
+ <!-- Leaflet JavaScript code -->
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+   crossorigin=""></script>
+</head>
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Cause of Death in the US</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble">
+          <div>
+            <h1>Abstract</h1>
+            <p  id="text">From the same group of people who brought you data on heart disease in terms of its correlation with race, gender, BMI, mental and physical activity, and so on, we’re at it again, but this time, we will be looking at data describing the cause of death in the US from 1999 to 2017.The data was derived online through this link: https://data.cdc.gov/api/views/bi63-dtpu/rows.json?accessType=DOWNLOAD. In this link, we have access to a json file that has metadata (explaining what the dictionary values are) and the data. From what we derive, we will attempt to answer the following questions: What are the top causes of death per state? Which state is the deadliest state?  Does the cause of death vary per year (1999-2017)?  Death rate per population in the states.
+            </p> 
+            <h1>Methodology</h1>
+            <p>Initially, we read the data using python, convert it into a pandas dataFrame and from that, store the info as a csv file ready to be exported. The next step is to create a database using SQL, label the table, and then populate them with the csv file we created. Afterwards, we access the database via python using the flask library and then create an api that takes in two arguments (year and cause of death) and then populates the website route with a json file containing the data filtered by those two arguments. This then leads to the front end aspect of the project (which is what you’re currently looking at by viewing this webpage) where we take all that data obtained from the api route and load into visualization tools like the interactive map. </p>
+            <h1> Summary</h1>
+            <p> For the nineteen-year time span beginning with January 1999 to December 2017 we conclude the following. 
+
+              Heart disease causes the most deaths in the United States at 33.7% of the total. The second highest cause of death is cancer at 29.9%. 
+            <img src="pie_chart.png" alt="Causes of Death in the United States" width="1000" height="800"> 
+           
+            <p> There were eight states which were exceptions. (Alaska, Delaware, DC, Maine, Minnesota, New Hampshire, Oregon, and Washington).  In these states cancer was the highest cause of death, just slightly ahead of heart disease. 
+            </p> 
+            <p> The lowest causes of death were kidney disease at 2.4% and Suicide at 1.9% for the 19-year period. 
+            </p>
+            
+  
+            <p> The top 10 causes of death in the United States in order of percentage:  
+               
+              Heart disease                         33.7% 
+               Cancer                                29.9% 
+               Stroke                                 7.5% 
+               CLRD                                   7.2% 
+               Unintentional injuries                 6.5% 
+               Alzheimer’s                            4.1%
+               Diabetes                               3.9% 
+               Influenza & Pneumonia                  3.0% 
+               Kidney disease                         2.4% 
+               Suicide                                1.9% 
+            </p>  
+            <img src="Causes of Death per State.png" alt="Causes of Death Over Time" width="1200" height="800">
+            
+            <img src="Total Deaths Over Time.png" alt="Total Deaths Over Time" width="1200" height="800">  
+            
+            
+            <p>
+              </p>
+
+              
+              
+
+              <img src="Causes of Death Over Time.png" alt="Causes of Over Time" width="1200" height="800">  
+
+
+              <p>
+               
+              <p>
+
+              </p>
+
+
+
+
+
+
+          </div> 
+        </div>
+      </div>
+  </div>
+    <div class="row">
+      <div class="col-md-2">
+       
+        <div class="well">
+          <h5>Years</h5>
+          <select id="year" ></select>
+        </div>
+        <div class="well">
+          <h5>Cause of Death</h5>
+          <select id="COD" >
+           
+          </select>
+        </div>
+        <div class="well">
+          <h5>Death Data</h5>
+          <select id="death" >
+            <option>Death Toll</option>
+            <option>Age Adjusted Death Rate</option>
+          </select>
+        </div>
+        <div class="fliter-button">
+          <button onclick="filterByYearAndCOD()">Filter</button>
+        </div>
+        
+       
+        
+      </div>
+      <div class="col-md-5" style="width: 70%; height: 500px;" id ='map'>
+        
+        <div id="bar" ></div>
+        
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <div class="row">
+      <h1>Conclusion</h1>
+
+      For the nineteen-year time span beginning with January 1999 to December 2017 we decided to limit the
+      Scope of our data analysis to the top ten causes of death in The United States.  
+       
+      California had the largest number of deaths of any state, followed by New York, Florida, Texas, and Pennsylvania in descending order.  
+       
+      The states with the lowest number of deaths were North Dakota, Vermont, District of Columbia,   
+      Wyoming and Alaska. 
+      
+      To compare the states accurately based on population characteristics, we would have to use an age-adjusted death rate. 
+      Age-adjusted death rates (per 100,000 population) are based on the 2000 U.S. standard population.
+      
+      The age-adjusted death rate is a statistical measure that accounts for differences in the age distribution of populations. It is calculated as the number of deaths per 100,000 people, adjusted to the age distribution of a standard population. This measure is used to compare mortality rates between populations with different age structures.
+      
+      According to the World Population Review, the state with the highest death rate in the United States is Mississippi with a death rate of 1,138.7 per 100,000 people in 2020.  The states with the second and third highest death rates are Alabama and West Virginia with death rates of 1,057.9 and 1,055.8 per 100,000 people respectively.
+      
+      The age adjusted-death rate in The United States was 828.7 deaths per 100,000 population in 2020.
+      
+      It's important to point out that the states with the largest number of deaths were not the states with the highest death rates per 100,000 in population.  Using the age-adjusted death rates, The 50 US states rank from lowest to highest in 2017 are:
+      
+        Minnesota	119.1	8,230
+        Colorado	122.7	7,060
+        Hawaii		129.8	2,575
+        Oregon		134	6,942
+        Massachusetts	134.6	12,140
+        Alaska		135	814
+        North Dakota	137.8	1,326
+        Washington	138.8	11,582
+        Connecticut	141.6	7,138
+        Arizona		141.9	12,398
+        California	142.9	62,797
+        Maine		143.5	2,844
+        Florida		145.8	46,440
+        Wyoming		148.9	1,001
+        Nebraska	149.3	3,581
+        New Hampshire	149.7	2,721
+        South Dakota	150.1	1,710
+        Utah		150.2	3,749
+        New Mexico	151.4	3,896
+        Vermont		152.5	1,332
+        Virginia	154.5	14,861
+        Montana		155	2,164
+        Rhode Island	155.7	2,339
+        North Carolina	156.5	18,808
+        Wisconsin	157.6	11,860
+        Kansas		157.9	5,723
+        Delaware	158.4	1,990
+        New Jersey	162.3	18,840
+        Idaho		162.4	3,084
+        Illinois	163.3	25,394
+        Maryland	164.5	11,653
+        Iowa		167.4	7,180
+        Texas		169.2	45,346
+        New York	171.2	44,092
+        South Carolina	172	10,418
+        Georgia		175.8	18,389
+        Pennsylvania	176	32,312
+        Indiana		183.2	14,445
+        Ohio		186.2	28,008
+        Missouri	191.1	14,820
+        West Virginia	192	4,849
+        Kentucky	195.9	10,343
+        Michigan	196.1	25,187
+        Nevada		199.3	6,417
+        Tennessee	202.2	16,019
+        Louisiana	214.4	11,260
+        Alabama		223.2	13,110
+        Arkansas	223.8	8,270
+        Mississippi	231.6	7,944
+        Oklahoma	237.2	10,772
+      
+              (Source: National Center for Health Statistics)
+      
+      
+      Other questions we might ask in the future:
+      
+      How does the U.S. death rate compare to other countries?
+      How do the top 10 causes of death vary from state to state?
+      
+      
+      
+      
+      
+      
+                        
+
+
+        
+    </p>
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+  <script src="logic.js"></script>
+  <script src="https://cdn.zoomcharts-cloud.com/1/latest/zoomcharts.js" type="text/javascript"></script>
+  
+
+</body>
+
+</html>
