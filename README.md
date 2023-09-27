@@ -20,6 +20,12 @@ This project uses the following to clean, sort, and depicts the causes of death 
 - HTML
 - Javascript
 
+## Data Components
+- American states
+- Causes of death names
+- Year
+- Total deaths
+
 ## Data Source:
 - Dataset: https://data.cdc.gov/api/views/bi63-dtpu/rows.json?accessType=DOWNLOAD
   
