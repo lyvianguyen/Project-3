@@ -1,6 +1,28 @@
 -- use flask to call data from postgree. let flask do all the filtering. use sqlalchemy. build an api to make a call back to the database server. 
 SELECT * FROM data;
 
+CREATE TABLE "data" (
+    "sid" VARCHAR(300)   NOT NULL,
+    "position" BIGINT   NOT NULL,
+    "created_at" BIGINT   NOT NULL,
+    "created_meta" VARCHAR(10)   NULL,
+    "updated_at" BIGINT   NOT NULL,
+    "updated_meta" VARCHAR(10)   NULL,
+    "meta" VARCHAR(50)   NULL,
+    "year" INT   NOT NULL,
+    "113_cause_name" VARCHAR(300)   NOT NULL,
+    "cause_name" VARCHAR(150)   NOT NULL,
+    "state" VARCHAR(100)   NOT NULL,
+    "deaths" BIGINT   NOT NULL,
+    "age_adjusted_death_rate" FLOAT   NOT NULL
+);
+
+DROP TABLE data 
+  DROP COLUMN postion,
+  DROP COLUMN created_meta,
+  DROP COLUMN updated_meta,
+  DROP COLUMN meta;
+  
 --sum of deaths by detailed causes 
 --sorted by highest number of deaths by state
 SELECT state, cause_name, SUM(deaths) 
